@@ -1,7 +1,6 @@
 
 // Estilos
-// import './App.css';
-import  styles from './styles.module.css'
+import './App.css';
 // Componentes
 // import Header from './components/Header';
 import Navbar from './components/Navbar';

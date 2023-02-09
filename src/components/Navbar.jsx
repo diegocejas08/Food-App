@@ -1,22 +1,23 @@
 import React from "react";
-import Logo from "../Assets/Logo.webp";
-import styles from "../styles.module.css";
+import Logo from "../Navbar-img/Logo.webp";
+// import styles from "../index.css";
 
 const Navbar = () => {
     return (
-        <nav className={styles.lista}>
-            <div className={styles.nav}>
-                <img className={styles.logo} src={Logo} alt="" />
-                <ul>
-                    <li>Menú</li>
-                    <li>Eventos</li>
-                    <li>Home</li>
-                    <li>Club Veggie</li>
-                    <li>Franquicia</li>
-                    <li>Contactanos</li>
-                </ul>
-            </div>
-        </nav>
+        <>
+            <nav className=" bg-yellow-100" >
+                <div className="flex justify-between items-center h-48 relative shadown-sm">
+                    <img className="ml-4" src={Logo} alt="" />
+                    <ul className=" flex space-x-5">
+                        <li className="transform motion-safe:hover:scale-110  font-serif font-bold text-4xl text-green-600">Menú</li>
+                        <li className="transform motion-safe:hover:scale-110 font-serif font-bold text-4xl text-green-600">Nosotros</li>
+                        <li className="transform motion-safe:hover:scale-110 font-serif font-bold text-4xl text-green-600">Club Veggie</li>
+                        <li className="transform motion-safe:hover:scale-110 font-serif font-bold text-4xl text-green-600">Contactanos</li>
+                    </ul>
+                </div>
+            </nav>
+        </>
+
     );
 };
 
